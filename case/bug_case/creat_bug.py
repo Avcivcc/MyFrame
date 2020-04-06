@@ -24,6 +24,7 @@ class Test_creat_bug(unittest.TestCase):
         self.dr.find_element_by_xpath('//input[@name="password"]').send_keys('123456.')
         self.dr.find_element_by_xpath('//button[@type="submit"]').click()
 
+    # 登陆自动化
     def test_002_creat_bug(self):
         self.dr.find_element_by_xpath('//li[@data-id="qa"]/a').click()
         self.dr.find_element_by_link_text('Bug').click()
