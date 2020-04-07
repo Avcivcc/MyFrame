@@ -23,13 +23,14 @@ class Test_creat_case(unittest.TestCase):
         self.dr.find_element_by_xpath('//button[@type="submit"]').click()
 
     def test_002_creat_case(self):
+        lab = str(random.randint(1, 100))
         self.dr.find_element_by_xpath('//li[@data-id="qa"]/a').click()
         self.dr.find_element_by_link_text('用例').click()
         # self.dr.find_element_by_xpath('//a[@class="btn btn-info"]').click()
         self.dr.find_element_by_xpath('//a[@class="btn btn-primary"]').click()
         self.dr.find_element_by_xpath('//ul[@class="chosen-choices"]').click()
         self.dr.find_element_by_xpath('//li[@data-option-array-index="2"]').click()
-        self.dr.find_element_by_xpath('//input[@name="title"]').send_keys('test001')
+        self.dr.find_element_by_xpath('//input[@name="title"]').send_keys('test_case' + lab)
         self.dr.execute_script('window.scrollTo(0,1000)')
         self.dr.find_element_by_xpath('//td[@colspan="3"]/button').click()
         sleep(4)
