@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/bin/bash
 # vim: set fileencoding=utf-8
 
 from untils.HTMLTestRunner_PY3 import HTMLTestRunner
