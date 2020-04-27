@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# vim: set fileencoding=utf-8
+
 from untils.HTMLTestRunner_PY3 import HTMLTestRunner
 from untils.log_cn import *
 from untils.tools import sendMailAttach
